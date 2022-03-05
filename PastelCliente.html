@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Cliente</title>
+</head>
+<body>
+
+    <img src="Logo.png" alt="Logo Dulce Fantasía" width="534px" height="308px">
+
+    <h1>Dulce Fantasía</h1>
+    <h2>Los pasteles de tus sueños<br></h2>
+    <hr>
+    <h2>Domicilio: Avenida Centro Morelia No. 97. Morelia, Michoacán, México<br>Telefono: (+52) 44278942389<br>Horarios: 9am a 6pm (Lunea a Sabado) y 10am a 2:30pm (Domingos)<br></h2>
+    <hr>
+    <p>Hola! <br> Bienvenido a Dulce Fantasía, donde están los pasteles de tus sueños <br> <br> Puedes escoger tu(s) sabor(es) para tu pastel (cada piso sería de diferente sabor):</p>
+    <hr>
+    <p>Pastel de CHOHOLATE: $300</p>
+    <img src="pastel1.jpg" alt="Pastel Chocolate" width="250px" height="150px">
+
+    <p>Pastel de VAINILLA: $200</p>
+    <img src="pastel2.jpg" alt="Pastel Vainilla" width="250px" height="150px">
+
+    <p>Pastel de TRES LECHES: $300</p>
+    <img src="pastel3.jpg" alt="Pastel 3 Leches" width="250px" height="150px">
+
+    <p>Pastel de RED VELVET: $250</p>
+    <img src="pastel4.jpg" alt="Pastel Red Velvet" width="250px" height="150px">
+
+    <p>Pastel de ZANAHORIA: $300</p>
+    <img src="pastel5.jpg" alt="Pastel Zanahoria" width="250px" height="150px">
+
+    <p>Pastel de CAFÉ: $270</p>
+    <img src="pastel6.jpg" alt="Pastel Café" width="250px" height="150px">
+
+    <p>Pastel de LIMÓN: $200</p>
+    <img src="pastel7.jpg" alt="Pastel Limón" width="250px" height="150px">
+    <hr>
+
+    <p> <br> Tambien puedes escoger tu(s) decoracion(es) para tu pastel:</p>
+
+    <p>JARABE DE CHOCOLATE: $50</p>
+    <img src="extra1.jpg" alt="Chocolate Liquido" width="100px" height="100px">
+
+    <p>FONDANT: $150</p>
+    <img src="extra2.png" alt="Fondant" width="100px" height="100px">
+
+    <p>CHISPAS DE COLORES: $30</p>
+    <img src="extra3.jpg" alt="Chispas colores" width="100px" height="100px">
+
+    <p>CHANTILLY DE QUESO CREMA: $150</p>
+    <img src="extra4.jpg" alt="Queso Crema" width="100px" height="100px">
+
+    <p>FRESAS EN RODAJA: $150</p>
+    <img src="extra5.jpg" alt="Fresas" width="100px" height="100px">
+    <p>DURAZNOS EN RODAJA: $200</p>
+    <img src="extra6.jpg" alt="Duraznos" width="100px" height="100px">
+
+    <p>TROZOS DE CHOCOLATE: $100</p>
+    <img src="extra7.jpg" alt="Trozos Chocolate" width="100px" height="100px">
+    <hr>
+
+    <p><h1>Para encargar tu pastel, favor de llenar los siguientes datos:</h1></p>
+    <hr>
+
+    <form onsubmit="alert('Datos Enviados! \nSe está preparando tu Pastel');" action="Pasteleria.html" id="form1" method="post">
+        <!-- Tipos de Inputs -->
+        <h2>Datos Personales</h2>
+        <label for="nombre1">Nombre Completo</label><br>
+        <input type="text" id="nombre1" name="nombre1"><br><br>
+
+        <label for="tel1">Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+        <label for="correo1">Correo Electronico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <hr>
+
+        <h2>Selecciona Tipo de Sabor(es)</h2> 
+        <h3>(pueden combinarse para que cada piso tenga diferente sabor)<br></h3>
+        <input type="checkbox" id="sabor1" name="sabor1" value="Choc">
+        <label for="sabor1">Pastel de Chocolate</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="Vaini">
+        <label for="sabor2">Pastel de Vainilla</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Leches">
+        <label for="sabor3">Pastel de Tres Leches</label><br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Velvet">
+        <label for="sabor4">Pastel de Red Velvet</label><br>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Zanah">
+        <label for="sabor5">Pastel de Zanahoria</label><br>
+        <input type="checkbox" id="sabor6" name="sabor6" value="Caf">
+        <label for="sabor6">Pastel de Café</label><br>
+        <input type="checkbox" id="sabor7" name="sabor7" value="Lim">
+        <label for="sabor7">Pastel de Limón</label><br><br>
+
+        <h2>Selecciona Tipo de Decoracion(es)</h2> 
+        <h3>(pueden combinarse varios tipos)<br></h3>
+        <input type="checkbox" id="topping1" name="topping1" value="ChocolateLiquido">
+        <label for="topping1">Jarabe de Chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Fondant">
+        <label for="topping2">Fondant</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Chispas">
+        <label for="topping3">Chispas de Colores</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Crema">
+        <label for="topping4">Chantilly de Queso Crema</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Fresas">
+        <label for="topping5">Fresas en Rodaja</label><br>
+        <input type="checkbox" id="topping6" name="topping6" value="Duraznos">
+        <label for="topping6">Duraznos en Rodaja</label><br>
+        <input type="checkbox" id="topping7" name="topping7" value="Chocolates">
+        <label for="topping7">Trozos de Chocolate</label><br><br>
+
+        <h2>Datos Sobre el Pastel</h2>
+        <label for="general1">Descripsion General Del Pastel</label><br>
+        <input type="text" id="general1" name="general1"><br><br>
+
+        <hr>
+        <input type="submit" value="Encargar Pastel">
+        <input type="reset" value="Reestablecer Datos">
+        <hr>
+    </form>
+</body>
+
+</html>
